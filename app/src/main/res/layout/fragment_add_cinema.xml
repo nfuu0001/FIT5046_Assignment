@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCinemaFragment">
+
+    <TextView
+        android:text = "Add Cinema"
+        android:layout_width="wrap_content"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/add_cinema_title"
+        android:textSize = "35dp"
+        android:layout_marginTop="40dp"
+        android:textColor = "#4A5151"
+        android:layout_centerHorizontal = "true" />
+
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:text = "Cinema Name:"
+        android:id = "@+id/add_cinema_name1"
+        android:layout_below = "@+id/add_cinema_title"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="40dp"
+        android:textColor = "#7550B6"
+        android:textSize = "20dp" />
+
+    <EditText
+        android:layout_width = "300dp"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/add_cinema_name"
+        android:hint = "Enter cinema name"
+        android:inputType="textEmailAddress"
+        android:focusable = "true"
+        android:layout_marginStart="40dp"
+        android:textColorHighlight = "#3C58F8"
+        android:textColorHint = "#ACAFB1"
+        android:layout_marginTop = "10dp"
+        android:layout_below = "@+id/add_cinema_name1" />
+
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:text = "Postcode:"
+        android:id = "@+id/add_cinema_postcode1"
+        android:layout_below = "@+id/add_cinema_name"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        android:textColor = "#7550B6"
+        android:textSize = "20dp" />
+
+    <EditText
+        android:layout_width = "300dp"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/add_cinema_postcode"
+        android:hint = "Enter cinema name"
+        android:inputType="textEmailAddress"
+        android:focusable = "true"
+        android:layout_marginStart="40dp"
+        android:textColorHighlight = "#3C58F8"
+        android:textColorHint = "#ACAFB1"
+        android:layout_marginTop = "10dp"
+        android:layout_below = "@+id/add_cinema_postcode1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@+id/add_cinema_postcode"
+        android:layout_marginTop = "30dp"
+        android:text="Submit"
+        android:layout_marginStart="60dp"
+        android:background="#8CBFE8"
+        android:id="@+id/bt_add_cinema" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@+id/add_cinema_postcode"
+        android:layout_marginTop = "30dp"
+        android:text="back"
+        android:layout_marginStart="260dp"
+        android:background="#4543484C"
+        android:id="@+id/bt_back" />
+
+
+
+
+</RelativeLayout>

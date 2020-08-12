@@ -1,0 +1,76 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height = "match_parent"
+    tools:context = ".MainActivity">
+
+
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop = "10dp"
+        android:layout_centerHorizontal = "true"
+        android:text = "first name"
+        android:id = "@+id/firstName"
+        android:layout_below = "@+id/textview"
+        android:textColor = "#FF5722"
+        android:textSize = "20dp" />
+
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop = "10dp"
+        android:text = "current date"
+        android:id = "@+id/current_date"
+        android:layout_below = "@+id/firstName"
+        android:layout_centerHorizontal = "true"
+        android:textColor = "#FF5722"
+        android:textSize = "15dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_marginTop = "10dp"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/current_date"
+        android:layout_centerHorizontal = "true"
+        android:src="@drawable/movie_info" />
+
+
+
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop = "10dp"
+        android:text = "Top five movies"
+        android:id = "@+id/title"
+        android:layout_below = "@+id/imageView"
+        android:textColor = "#3C953F"
+        android:textSize = "25dp" />
+
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop = "10dp"
+        android:text = "Movie Name    Released Date    Rating Score"
+        android:id = "@+id/column"
+        android:layout_below = "@+id/title"
+        android:textColor = "#22ABBA"
+        android:textSize = "20dp" />
+
+    <ListView
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop = "15dp"
+        android:id = "@+id/top5"
+        android:layout_below = "@+id/column"
+        android:layout_weight = "5"
+        android:layout_centerHorizontal = "true"/>
+
+
+
+
+
+
+</RelativeLayout>

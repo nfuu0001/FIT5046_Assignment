@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tx_pie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal = "true"
+                android:text="Pie Chart"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt_start"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:background="#8CBFE8"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="30dp"
+                    android:text="select start date"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/bt_end"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:background="#8CBFE8"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="15dp"
+                    android:text="select end date"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/bt_go"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="#ACE36D"
+                    android:layout_below="@+id/tx_pie"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="23dp"
+                    android:text="go"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_start"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_below="@+id/bt_start"
+                    android:textColor = "#FB9703"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/tv_end"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="50dp"
+                    android:textColor = "#FB9703"
+                    android:layout_below="@+id/bt_end"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
+            </LinearLayout>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pie_chart"
+                android:layout_below="@+id/tv_start"
+                android:layout_marginStart="5dp"
+                android:layout_width="400dp"
+                android:layout_height="450dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/tx_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pie_chart"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal = "true"
+                android:text="Bar Chart"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tx_year"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_bar"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="10dp"
+                android:textColor = "#4CAF50"
+                android:text="Choose year"
+                android:textSize="20dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Spinner
+                    android:id="@+id/spinner_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_below="@+id/tx_year"
+                    android:layout_marginTop="10dp"
+                    android:entries="@array/array_year"
+                    android:gravity="center" />
+
+                <Button
+                    android:id="@+id/bt_go2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="#ACE36D"
+                    android:layout_below="@+id/tx_bar"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginTop="15dp"
+                    android:text="go"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/bar_chart"
+                android:layout_width="380dp"
+                android:layout_below="@+id/spinner_year"
+                android:layout_height="480dp"
+                android:layout_gravity="center"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Movie_View">
+
+    <TextView
+        android:id="@+id/movie_name"
+        android:layout_centerHorizontal = "true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor = "#0FAF16"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/movie_genre1"
+        android:layout_below = "@+id/movie_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "Genre"
+        android:textColor = "#6130B8"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/movie_genre"
+        android:layout_below = "@+id/movie_genre1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor = "#A11D1D1E"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/movie_release_date1"
+        android:layout_below = "@+id/movie_genre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor = "#6130B8"
+        android:text = "Release Date"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/movie_release_date"
+        android:layout_below = "@+id/movie_release_date1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor = "#A11D1D1E"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="13sp"/>
+
+
+    <TextView
+        android:id="@+id/movie_country1"
+        android:layout_below = "@+id/movie_release_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor = "#6130B8"
+        android:text = "Country"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/movie_country"
+        android:layout_below = "@+id/movie_country1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor = "#A11D1D1E"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/movie_director1"
+        android:layout_below = "@+id/movie_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor = "#6130B8"
+        android:text = "Director(s)"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/movie_director"
+        android:layout_below = "@+id/movie_director1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor = "#A11D1D1E"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/movie_cast1"
+        android:layout_below = "@+id/movie_director"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor = "#6130B8"
+        android:text = "Cast"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/movie_cast"
+        android:layout_below = "@+id/movie_cast1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor = "#A11D1D1E"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/movie_plot1"
+        android:layout_below = "@+id/movie_cast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor = "#6130B8"
+        android:text = "Plot Summary"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/movie_plot"
+        android:layout_below = "@+id/movie_plot1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor = "#A11D1D1E"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:id="@+id/rating1"
+        android:layout_below = "@+id/movie_plot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor = "#6130B8"
+        android:text = "Rating"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="15sp"/>
+
+    <RatingBar
+        android:id="@+id/rating"
+        android:layout_below = "@+id/rating1"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:numStars="10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rating="0"
+        android:stepSize="0.5"
+        style="?android:attr/ratingBarStyleSmall"
+        android:isIndicator="true"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below = "@+id/rating"
+        android:text="Add to Watchlist"
+        android:id="@+id/bt_watchlist"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="50dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add to Memoir"
+        android:id="@+id/bt_memoir"
+        android:layout_marginTop="8dp"
+        android:layout_below = "@+id/rating"
+        android:layout_marginStart="250dp"/>
+
+</RelativeLayout>

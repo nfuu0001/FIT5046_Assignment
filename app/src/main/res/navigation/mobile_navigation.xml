@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.fit5046_assignment.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_movie_search"
+        android:name="com.example.fit5046_assignment.ui.movieSearch.MovieSearchFragment"
+        android:label="@string/menu_movie_search"
+        tools:layout="@layout/fragment_movie_search" />
+
+    <fragment
+        android:id="@+id/nav_movie_memoir"
+        android:name="com.example.fit5046_assignment.ui.movieMemoir.MovieMemoirFragment"
+        android:label="@string/menu_movie_memoir"
+        tools:layout="@layout/fragment_movie_memoir" />
+
+    <fragment
+        android:id="@+id/nav_watchlist"
+        android:name="com.example.fit5046_assignment.ui.watchlist.WatchlistFragment"
+        android:label="@string/menu_watchlist"
+        tools:layout="@layout/fragment_watchlist" />
+    <fragment
+        android:id="@+id/nav_reports"
+        android:name="com.example.fit5046_assignment.ui.reports.ReportsFragment"
+        android:label="@string/menu_reports"
+        tools:layout="@layout/fragment_reports" />
+    <fragment
+        android:id="@+id/nav_maps"
+        android:name="com.example.fit5046_assignment.ui.maps.MapsFragment"
+        android:label="@string/menu_maps"
+        tools:layout="@layout/fragment_maps" />
+
+</navigation>

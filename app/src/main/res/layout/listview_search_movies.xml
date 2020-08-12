@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width = "20dp"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/search_movie_id"
+        android:textColor = "#6C3FBC"
+        android:visibility="invisible"
+        android:textSize = "15dp" />
+    <TextView
+        android:layout_width = "130dp"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/search_movie_name"
+        android:textColor = "#6C3FBC"
+        android:textSize = "15dp" />
+    <TextView
+        android:layout_width = "150dp"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/search_release_date"
+        android:textColor = "#6C3FBC"
+        android:textSize = "15dp" />
+    <ImageView
+        android:layout_width = "80dp"
+        android:layout_height = "180dp"
+        android:id = "@+id/search_image" />
+</LinearLayout>

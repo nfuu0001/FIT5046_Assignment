@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <TextView
+        android:id="@+id/tx_memoir_moviename"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor = "#6745A5"
+        android:textStyle="bold"
+        android:text=""
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tx_memoir_releasedate"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tx_memoir_moviename"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor = "#6745A5"
+        android:textStyle="bold"
+        android:text=""
+        android:textSize="20dp" />
+
+    <ImageView
+        android:layout_width = "130dp"
+        android:layout_height = "120dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="250dp"
+        android:text="image"
+        android:id = "@+id/memoir_image" />
+
+    <Button
+        android:id="@+id/bt_memoir_date"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tx_memoir_releasedate"
+        android:background="#ACE36D"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:text="select date"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_memoir_date"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/bt_memoir_date"
+        android:layout_marginStart="20dp"
+        android:textColor = "#FB9703"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tv_memoir_time"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/bt_memoir_date"
+        android:layout_marginStart="150dp"
+        android:textSize="15dp"
+        android:textColor = "#FB9703"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tx_cinema"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_memoir_time"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor = "#6745A5"
+        android:text="Choose Cinema"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner_cinema"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_cinema"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:entries="@array/array_cinema"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/bt_add_cinema"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="#ACE36D"
+        android:layout_below="@+id/spinner_cinema"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Add new Cinema "
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_memoir_comment"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_add_cinema"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:textColor = "#6745A5"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Comment:" />
+
+    <EditText
+        android:id="@+id/et_memoir_comment"
+        android:layout_width="350dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tv_memoir_comment"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:hint="Enter short comment" />
+
+    <TextView
+        android:id="@+id/tv_memoir_rating"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/et_memoir_comment"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor = "#6745A5"
+        android:text="Rating:" />
+
+    <RatingBar
+        android:id="@+id/memoir_ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/tv_memoir_rating"
+        android:numStars="10"
+        android:isIndicator="false"
+        style="?android:attr/ratingBarStyleSmall"
+        android:stepSize="0.5"/>
+
+    <TextView
+        android:id="@+id/tv_memoir_score"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tv_memoir_rating"
+        android:layout_marginTop="1dp"
+        android:layout_marginStart="200dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor = "#6745A5"
+        android:text="" />
+
+    <Button
+        android:id="@+id/bt_memoir_submit"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tv_memoir_score"
+        android:layout_marginStart="150dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:background="#8CBFE8"
+        android:text="Submit"
+        android:textSize="15sp" />
+
+</RelativeLayout>
+
+

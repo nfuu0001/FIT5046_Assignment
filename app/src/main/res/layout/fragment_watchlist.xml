@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height = "match_parent"
+    tools:context = ".ui.watchlist.WatchlistFragment">
+
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height = "20dp"
+        android:layout_marginTop = "15dp"
+        android:text = "Movie Name   Release Date   Date Added   Time Added"
+        android:textColor = "#187EAC"
+        android:layout_marginStart="10dp"
+        android:textSize = "15dp"
+        android:id = "@+id/listview_watchlist_title" />
+
+
+    <ListView
+        android:layout_width = "wrap_content"
+        android:layout_height = "400dp"
+        android:layout_marginTop = "15dp"
+        android:layout_marginStart="10dp"
+        android:layout_below = "@+id/listview_watchlist_title"
+        android:id = "@+id/listview_watchlist"
+        android:layout_weight = "5" />
+
+
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height = "30dp"
+        android:layout_marginTop = "10dp"
+        android:layout_centerHorizontal = "true"
+        android:text = ""
+        android:id = "@+id/tv_selected"
+        android:layout_below = "@+id/listview_watchlist"
+        android:textColor = "#FF5722"
+        android:textSize = "20dp" />
+
+
+    <Button
+        android:id="@+id/bt_delete"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:background="#8CBFE8"
+        android:layout_below = "@+id/tv_selected"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="60dp"
+        android:text="delete"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/bt_view"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_below = "@+id/tv_selected"
+        android:background="#8CBFE8"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="30dp"
+        android:text="view"
+        android:textSize="15sp" />
+
+
+
+
+
+
+</RelativeLayout>
+
